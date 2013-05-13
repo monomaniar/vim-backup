@@ -4,7 +4,11 @@ vim-backup
 
 my vim scipts
 
-mysaves fold save the ctag and vim-start scripts.
+mysaves 文件夹里放的是启动工程时候的配置文件,包括:
+
+一个ctags.sh生成工程内文件的tag.
+
+一个启动脚本配置了viminfo和session的自动保存和加载，指定tag文件，设置unite查找文件位置等.
 
 ---
 简介
