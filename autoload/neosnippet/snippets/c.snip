@@ -1,0 +1,209 @@
+# ranbo.wu add
+#snippet fixme
+#alias FIXME
+#abbr //FIXME(ranbo.wu)
+#	// FIXME(ranbo.wu):${0} @`strftime("%d %b %Y")`
+
+#snippet bf
+#alias BUGFIX,bugfix
+#abbr //bugfix (ranbo.wu)
+#    //(ranbo.wu)bugfix:${0} @`strftime("%d %b %Y")`
+
+snippet error
+abbr fprintf(stderr, "Error! %s:%d", __FILE__, __LINE__);
+  fprintf(stderr, "Error! ${1} %s:%d.\n", __FILE__, __LINE__);
+
+snippet      ranbo
+abbr         // ranbo.wu time
+     // ranbo.wu @`strftime("%d %b %Y")`
+
+snippet      rambo
+abbr         // ranbo.wu time
+     // ranbo.wu @`strftime("%d %b %Y")`
+
+snippet todo
+alias TODO
+abbr //TODO(ranbo.wu)
+	/// @todo(ranbo.wu):${0}  @`strftime("%d %b %Y")`
+
+snippet bug
+alias BUG
+abbr //bugReport {ranbo.wu}
+    /// @bug(ranbo.wu): ${0} @`strftime("%d %b %Y")`
+
+snippet      deprecated
+alias DEPRECATED
+abbr         //deprecaped(ranbo.wu)
+     /// @deprecated(ranbo.wu): ${0} @`strftime("%d %b %Y")`
+
+snippet     if
+abbr        if () {}
+    if (${1})
+    { // $1
+        ${0}
+    } // if:$1
+
+snippet else
+    else // ${1}
+    {
+        ${0}
+    } // else:$1
+
+snippet elseif
+    else if (${1})
+    {
+        ${0}
+    } // end else-if:else if($1)
+
+snippet ifelseif
+abbr if (){} else if() {}
+    if (${1})
+    {
+        ${0}
+    } // end if: if($1)
+    else if (${2})
+    {
+
+    } // end else if:  else if($2)
+
+snippet     ifelse
+abbr        if () {} else {}
+    if (${1})
+    {
+        ${0}
+    } // end if:$1
+    else
+    {
+
+    } // end else:if($1)
+
+
+snippet     for
+abbr        for () {}
+    for (${3:int} ${1} = 0; $1 < ${2}; ++$1)
+    {
+        ${0}
+    } // for:$1<$2
+
+snippet     while
+abbr        while () {}
+    while (${1})
+    {
+        ${0}
+    } // while:$1
+
+snippet     do-while
+alias       do
+    do
+    { // do-while:$1
+        ${0}
+    }
+    while (${1});
+
+snippet     switch
+abbr        switch () {}
+    switch (${1})
+    {
+        case ${2}:
+            ${0}
+            break;
+    } // switch:$1
+
+snippet     function
+alias       func
+abbr        func() {}
+    ${1:void} ${2:func_name}(${3})
+    {
+        ${0}
+    } // $1 $2($3)
+
+snippet     struct
+abbr        struct {}
+    struct ${1}
+    {
+        ${0}
+    }; // struct: $1
+
+# Typedef struct
+snippet struct_typedef
+    typedef struct ${1}
+    {
+        ${0}
+    }; // typedef struct $1
+
+snippet     enum
+abbr        enum {}
+    enum ${1}
+    {
+        ${0}
+    }; // enum: $1
+
+# main function.
+snippet main
+	int main(int argc, char const* argv[])
+	{
+		${0}
+		return 0;
+	} // end of main
+
+# #include <...>
+snippet inc
+alias   #inc, #include
+    #include <${1:stdio}.h>${0}
+# #include "..."
+snippet inc2
+alias   #inc2, #include2,#inch,inch
+    #include "${1:}.h"${0}
+
+snippet ifndef
+alias   #ifndef
+abbr #ifndef ... #define ... #endif
+    #ifndef $1
+    #define ${1}
+
+    ${0}
+    #endif //$1
+
+snippet ifdef
+alias   #ifdef
+abbr #ifdef ... #endif
+    #ifdef ${1:SYMBOL}
+    #endif //$1 ${0}
+
+snippet def
+alias   #def, #define
+    #define
+
+# Include-Guard
+snippet once
+alias incg,#incg,inc-guard,include-guard
+abbr include-guard
+    #ifndef ${1:SYMBOL}
+    #define $1
+
+    ${0}
+    #endif /* end of include guard */
+
+# Tertiary conditional
+snippet conditional
+    (${1:/* condition */})? ${2:a} : ${3:b}
+
+# Typedef
+snippet typedef
+    typedef ${1:base_type} ${2:custom_type};
+
+snippet printf
+    printf("${1}\n"${2});${0}
+
+snippet fprintf
+    fprintf(${1:stderr}, "${2}\n"${3});${0}
+
+snippet comment
+alias /*
+    /* ${1:comment} */
+    ${0}
+
+snippet sizeof
+alias size
+    sizeof(${0})
+

@@ -1,0 +1,142 @@
+include c.snip
+
+# ranbo.wu
+snippet if-del
+abbr if(addr!=NULL){delete addr;addr=NULL;}
+  if(${1} != NULL) {
+    delete $1;
+    $1 = NULL;
+  }
+  ${0}
+
+snippet setter
+abbr set_member(int i_a){member_ = i_a};
+  inline void set_${1}(${2} i_d){$1_ = i_d;}${0}
+
+snippet getter
+abbr member(){return member_;}
+  inline ${2} ${1}() const {return $1_;}${0}
+
+snippet incc
+alias   #incc,#include3
+abbr    #include <iostream>
+    #include <${1:iostream}>${0}
+
+snippet ns
+alias namespace
+abbr namespace {}//namespace
+    namespace ${1}{
+    ${0}
+    } // namespace $1
+
+snippet     template
+abbr        template <T>
+    template<typename ${1:T}>
+
+snippet     class
+abbr        class {}
+    class ${1:name}{
+        ${2}
+    }; // define class: $1
+
+snippet testenv
+alias   envtest
+abbr    class TEST Environment
+    namespace test{
+    class ${1:name}TestEnvironment :public testing::Environment{
+     public:
+      virtual void SetUp()
+      {
+        ${2}
+      }
+      virtual void TearDown()
+      {
+        ${3}
+      }
+    }; // define class: $1TestEnvironment
+    } // namspace test
+    using ${4}::$1TestEnvironment;
+
+snippet et
+alias expect_t,expect_ture,EXPECT_TRUE
+abbr EXPECT_TRUE
+  EXPECT_TRUE(${1});
+
+snippet ef
+alias expect_f,expect_ture,EXPECT_FALSE
+abbr EXPECT_FALSE
+  EXPECT_FALSE(${1});
+
+snippet at
+alias assert_t,assert_ture,ASSERT_FALSE
+abbr ASSERT_TRUE
+  ASSERT_TRUE(${1});
+
+snippet af
+alias assert_f,assert_ture,ASSERT_FALSE
+abbr ASSERT_FALSE
+  ASSERT_FALSE(${1});
+
+snippet stre
+abbr EXPECT_STREQ
+  EXPECT_STREQ(${1}, ${2});
+
+snippet strn
+abbr EXPECT_STENE
+  EXPECT_STRNE(${1}, ${2});
+
+snippet strce
+abbr EXPECT_STRCASEEQ
+  EXPECT_STRCASEEQ(${1}, ${2});
+
+snippet strcn
+abbr EXPECT_STRCASENE
+  EXPECT_STRCASENE(${1}, ${2});
+
+snippet test
+abbr    TEST CASE
+    TEST(${1}, ${2}){
+      ${3}
+    } // TEST CASE $1,$2
+
+snippet testmain
+alias   maint
+abbr    TEST Main Function
+	int main(int argc, char *argv[]){
+    testing::AddGlobalTestEnvironment(new ${0});
+    testing::InitGoogleTest(&argc, argv);
+		return RUN_ALL_TESTS();
+	} // end of test main
+
+snippet     try
+abbr        try catch
+    try
+    {
+        ${1}
+    }
+    catch (${2:except})
+    {
+        ${0}
+    } // catch $2
+
+# range based for ( C++11 feature )
+snippet     for_CPP11
+abbr        for (:) {}
+    for (${1:var} : ${2:container})
+    {
+        ${0}
+    } // for $1 $2
+
+# lambda expression ( C++11 feature )
+snippet     lambda
+abbr        [](){}
+    [${1}](${2})${3}{ ${4} }
+
+# scoped enumeration ( C++11 feature )
+snippet     enum_scoped
+abbr        enum struct {}
+    enum struct
+    {
+    ${1}
+    } // anonym enum
+
