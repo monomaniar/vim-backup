@@ -1,11 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/home/wuranbo/onlinenavi/trunk/compiler/blade'
-let g:netrw_dirhist_2='/home/wuranbo/onlinenavi/trunk/onlinenavi/xlong/tools/src'
-let g:netrw_dirhist_3='/home/wuranbo/onlinenavi/trunk/onlinenavi/xlong/tools'
-let g:netrw_dirhist_4='/home/wuranbo/onlinenavi/trunk/common/netframe/ccd'
-let g:netrw_dirhist_5='/home/wuranbo/map_data/12Q2_64_bit_extend_whole_nation'
-let g:netrw_dirhist_6='/home/wuranbo/onlinenavi/trunk/onlinenavi/src/XLongLib/StaticData/test'
-let g:netrw_dirhist_7='/home/wuranbo/onlinenavi/trunk/onlinenavi'
-let g:netrw_dirhist_8='/home/wuranbo/onlinenavi/trunk/build64_release/onlinenavi/src/XLongLib/DynamicTraffic/DyTrafficManager_test.runfiles'
-let g:netrw_dirhist_9='/home/wuranbo/.vim/autoload/neosnippet/snippets'
+let g:netrw_dirhist_cnt =0
