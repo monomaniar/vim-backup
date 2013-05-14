@@ -1,6 +1,20 @@
 include c.snip
 
+#snippet     enum
+#abbr        enum {}
+#    enum ${1}
+#    {
+#        ${0}
+#    }; // enum: $1
 # ranbo.wu
+snippet enum-errorcode
+abbr enum ErrorCode{ OK=0, ...}
+  enum ErrorCode
+  {
+    OK = 0,
+    ${0}
+  }; // enum: ErrorCode
+
 snippet if-del
 abbr if(addr!=NULL){delete addr;addr=NULL;}
   if(${1} != NULL) {
