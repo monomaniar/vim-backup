@@ -11,7 +11,7 @@
 
 snippet error
 abbr fprintf(stderr, "Error! %s:%d", __FILE__, __LINE__);
-  fprintf(stderr, "Error! ${1} %s:%d.\n", __FILE__, __LINE__);
+  fprintf(stderr, "Error! ${1} %s:%d.\n",${0} __FILE__, __LINE__);
 
 snippet      ranbo
 abbr         // ranbo.wu time

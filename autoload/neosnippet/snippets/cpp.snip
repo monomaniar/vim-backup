@@ -11,8 +11,9 @@ snippet enum-errorcode
 abbr enum ErrorCode{ OK=0, ...}
   enum ErrorCode
   {
-    OK = 0,
+    OK = 0x0,
     ${0}
+    UNKNOWN_ERROR = 0xff
   }; // enum: ErrorCode
 
 snippet if-del
