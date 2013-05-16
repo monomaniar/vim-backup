@@ -502,13 +502,13 @@ nmap <silent> <Leader>cll :ccl<CR>
 " Automatically read a file that has changed on disk
 set autoread
 " Search the current file for what's currently in the search register and display matches
-nmap <silent> <Leader>gs :vimgrep /<C-r>// %<CR>:ccl<CR>:cwin<CR><C-W>J:nohls<CR>
+"nmap <silent> <Leader>gs :vimgrep /<C-r>// %<CR>:ccl<CR>:cwin<CR><C-W>J:nohls<CR>
 
 " Search the current file for the word under the cursor and display matches
-nmap <silent> <Leader>gw :vimgrep /<C-r><C-w>/ %<CR>:ccl<CR>:cwin<CR><C-W>J:nohls<CR>
+"nmap <silent> <Leader>gw :vimgrep /<C-r><C-w>/ %<CR>:ccl<CR>:cwin<CR><C-W>J:nohls<CR>
 
 " Search the current file for the WORD under the cursor and display matches
-nmap <silent> <Leader>gW :vimgrep /<C-r><C-a>/ %<CR>:ccl<CR>:cwin<CR><C-W>J:nohls<CR>
+"nmap <silent> <Leader>gW :vimgrep /<C-r><C-a>/ %<CR>:ccl<CR>:cwin<CR><C-W>J:nohls<CR>
 "menu color
 "set completeopt=longest,menu
 
@@ -707,6 +707,72 @@ let g:syntastic_warning_symbol = '⚠'
 "set statusline+=%*
 
 let g:syntax_on=1 "语法
+
+"
+
+"  extra_cppflags = [
+"    '-std=c++0x '
+"    '-O2 ',
+"    '-Wall',
+"    '-pipe ',
+"    '-Wextra ',
+"    '-Wendif-labels ',
+"    '-Wfloat-equal ',
+"    '-Wformat=2 ',
+"    '-Wframe-larger-than=65536 ',
+"    '-Wmissing-include-dirs ',
+"    '-Wpointer-arith ',
+"    '-Wwrite-string ',
+"    '-Wno-invalid-offsetof ',
+"    '-Wvla ',
+"    '-Wabi ',
+"    '-Wconversion-null ',
+"    '-Wctor-dtor-privacy ',
+"    '-Wdelete-non-virtual-dtor ',
+"    '-Wnarrowing ',
+"    '-Wnoexcept ',
+"    '-Wnon-virtual-dtor ',
+"    '-Wreorder ',
+"    '-Weffc++ ',
+"    '-Wstrict-null-sentinel ',
+"    '-Wno-non-template-friend ',
+"    '-Wold-style-cast ',
+"    '-Woverloaded-virtual ',
+"    '-Wno-pmf-conversions ',
+"    '-Wsign-promo ',
+"    '-Wdouble-promotion ',
+"    '-Wformat-y2k ',
+"    '-Wformat-nonliteral ',
+"    '-Wformat-security ',
+"    '-Wformat=2 ',
+"    '-Winit-self ',
+"    '-Wswitch-default ',
+"    '-Wswitch-enum ',
+"    '-Wsync-nand ',
+"    '-Wunused-local-typedefs ',
+"    '-Wunused-parameter -',
+"    '-Wunused ',
+"    '-Wmaybe-uninitialized ',
+"    '-Wuninitialized -',
+"    '-Wstrict-overflow=5 ',
+"    '-Wstrict-aliasing=3 ',
+"    '-Wtrampolines ',
+"    '-Wshadow ',
+"    '-Wstack-usage=10000000 ',
+"    '-Wframe-larger-than=8000000 ',
+"    '-Wunsafe-loop-optimizations ',
+"'-Wpointer-arith ',
+"'-Wbad-function-cast ',
+"'-Wc++-compat ',
+"'-Wcast-qual ',
+"'-Wconversion ',
+"'-Wjump-misses-init ',
+"'-Waggregate-return ',
+"'-Wmissing-prototypes ',
+"'-Winline ',
+"'-Wdisabled-optimization'
+"],
+"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let syntastic_check_on_open = 0 "打开文件时候是否检测
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
