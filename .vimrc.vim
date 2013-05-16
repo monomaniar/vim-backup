@@ -707,9 +707,7 @@ let g:syntastic_warning_symbol = '⚠'
 "set statusline+=%*
 
 let g:syntax_on=1 "语法
-
 "
-
 "  extra_cppflags = [
 "    '-std=c++0x '
 "    '-O2 ',
@@ -761,16 +759,16 @@ let g:syntax_on=1 "语法
 "    '-Wstack-usage=10000000 ',
 "    '-Wframe-larger-than=8000000 ',
 "    '-Wunsafe-loop-optimizations ',
-"'-Wpointer-arith ',
-"'-Wbad-function-cast ',
-"'-Wc++-compat ',
-"'-Wcast-qual ',
-"'-Wconversion ',
-"'-Wjump-misses-init ',
-"'-Waggregate-return ',
-"'-Wmissing-prototypes ',
-"'-Winline ',
-"'-Wdisabled-optimization'
+"    '-Wpointer-arith ',
+"    '-Wbad-function-cast ',
+"    '-Wc++-compat ',
+"    '-Wcast-qual ',
+"    '-Wconversion ',
+"    '-Wjump-misses-init ',
+"    '-Waggregate-return ',
+"    '-Wmissing-prototypes ',
+"    '-Winline ',
+"    '-Wdisabled-optimization'
 "],
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
