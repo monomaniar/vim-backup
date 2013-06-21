@@ -116,7 +116,8 @@ if has("mswin")
 endif
 
 " auto encoding detecting
-set fileencodings=utf-8,cp936,big5,gb18030,ucs,ucs-bom,utf-8-bom
+set fileencodings=gbk,cp936,utf-8,big5,gb18030,ucs,ucs-bom,utf-8-bom
+set fileencoding=gbk
 let g:fencview_autodetect = 1
 
 " set term encoding according to system locale
