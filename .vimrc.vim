@@ -825,8 +825,8 @@ let g:DoxygenToolkit_returnTag="@returns "
 "
 let g:DoxygenToolkit_blockHeader=""
 let g:DoxygenToolkit_blockFooter=""
-let g:DoxygenToolkit_authorName="ranbo.wu@autonavi.com CopyRight(c) AutoNavi Inc."
-let g:DoxygenToolkit_licenseTag="CopyRight(c) AutoNavi Inc. ranbo.wu@autonavi.com"
+let g:DoxygenToolkit_authorName="wuranbo@baidu.com CopyRight(c) Baidu Inc."
+let g:DoxygenToolkit_licenseTag="CopyRight(c) Baidu Inc. wuranbo@baidu.com"
 "==============taglist===============================================
 "move to taglist.vim
 "function! TlistToggleRight()

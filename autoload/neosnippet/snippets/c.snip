@@ -1,13 +1,13 @@
-# ranbo.wu add
+# wuranbo add
 #snippet fixme
 #alias FIXME
-#abbr //FIXME(ranbo.wu)
-#	// FIXME(ranbo.wu):${0} @`strftime("%d %b %Y")`
+#abbr //FIXME(wuranbo)
+#	// FIXME(wuranbo):${0} @`strftime("%d %b %Y")`
 
 #snippet bf
 #alias BUGFIX,bugfix
-#abbr //bugfix (ranbo.wu)
-#    //(ranbo.wu)bugfix:${0} @`strftime("%d %b %Y")`
+#abbr //bugfix (wuranbo)
+#    //(wuranbo)bugfix:${0} @`strftime("%d %b %Y")`
 
 snippet if-ret
 abbr if(ret != 0){fprintf(...); return -1;}
@@ -24,27 +24,27 @@ abbr fprintf(stderr, "Error! %s:%d", __FILE__, __LINE__);
           ${0} __FUNCTION__, __FILE__, __LINE__);
 
 snippet      ranbo
-abbr         // ranbo.wu time
-     // ranbo.wu @`strftime("%d %b %Y")`
+abbr         // wuranbo time
+     // wuranbo @`strftime("%d %b %Y")`
 
 snippet      rambo
-abbr         // ranbo.wu time
-     // ranbo.wu @`strftime("%d %b %Y")`
+abbr         // wuranbo time
+     // wuranbo @`strftime("%d %b %Y")`
 
 snippet todo
 alias TODO
-abbr //TODO(ranbo.wu)
-	/// @todo(ranbo.wu):${0}  @`strftime("%d %b %Y")`
+abbr //TODO(wuranbo)
+	/// @todo(wuranbo):${0}  @`strftime("%d %b %Y")`
 
 snippet bug
 alias BUG
-abbr //bugReport {ranbo.wu}
-    /// @bug(ranbo.wu): ${0} @`strftime("%d %b %Y")`
+abbr //bugReport {wuranbo}
+    /// @bug(wuranbo): ${0} @`strftime("%d %b %Y")`
 
 snippet      deprecated
 alias DEPRECATED
-abbr         //deprecaped(ranbo.wu)
-     /// @deprecated(ranbo.wu): ${0} @`strftime("%d %b %Y")`
+abbr         //deprecaped(wuranbo)
+     /// @deprecated(wuranbo): ${0} @`strftime("%d %b %Y")`
 
 snippet     if
 abbr        if () {}

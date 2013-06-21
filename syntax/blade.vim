@@ -1,1 +1,0 @@
-/home/wuranbo/onlinenavi/trunk/compiler/blade/vim/syntax/blade.vim
