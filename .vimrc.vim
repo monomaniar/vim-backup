@@ -807,12 +807,14 @@ let g:DoxygenToolkit_compactDoc = "yes"
 " 	   and let use C++ type make the syntax highlight not work
 
 let g:DoxygenToolkit_commentType = "C" "手动变C++
-    let g:DoxygenToolkit_startCommentTag = "/// "
-    let g:DoxygenToolkit_interCommentTag = "/// "
-    let g:DoxygenToolkit_endCommentTag = ""
-    let g:DoxygenToolkit_startCommentBlock = "// "
-    let g:DoxygenToolkit_interCommentBlock = "// "
-    let g:DoxygenToolkit_endCommentBlock = ""
+    "=======commit start========change to c++=======
+    "let g:DoxygenToolkit_startCommentTag = "/// "
+    "let g:DoxygenToolkit_interCommentTag = "/// "
+    "let g:DoxygenToolkit_endCommentTag = ""
+    "let g:DoxygenToolkit_startCommentBlock = "// "
+    "let g:DoxygenToolkit_interCommentBlock = "// "
+    "let g:DoxygenToolkit_endCommentBlock = ""
+    "=======commit end========change to c++=======
 
 " 	 - When you define:
 "let g:DoxygenToolkit_briefTag_funcName = "yes"
