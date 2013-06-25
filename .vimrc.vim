@@ -684,6 +684,7 @@ let g:easytags_dynamic_files = 1
 let g:easytags_python_enabled = 1
 let g:easytags_python_script = 1
 "===========================================syntastic==========================
+let g:syntax_on=0 "语法检查总开关
 "for syntastic
 "let g:syntastic_cpp_include_dirs = [ '../','../../','../../../', 'includes' ]
 "let g:syntastic_cpp_include_dirs = [ 'includes', '../../','../','../../../' ]
@@ -707,7 +708,6 @@ let g:syntastic_warning_symbol = '⚠'
 "set statusline+=%{SyntasticStatuslineFlag()}
 "set statusline+=%*
 
-let g:syntax_on=1 "语法
 "
 "  extra_cppflags = [
 "    '-std=c++0x '
