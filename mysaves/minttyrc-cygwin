@@ -1,5 +1,5 @@
-Font=Courier New
-BoldAsFont=yes
+Font=Consolas
+BoldAsFont=no
 FontHeight=12
 ZoomShortcuts=no
 Locale=zh_CN
@@ -7,7 +7,7 @@ Charset=UTF-8
 CursorType=block
 Term=xterm-256color
 Printer=\\172.22.2.19\Input BW Printer
-FontIsBold=yes
+FontIsBold=no
 Black=7,54,66
 BoldBlack=0,43,54
 Red=220,50,47
