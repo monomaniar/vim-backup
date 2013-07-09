@@ -1,3 +1,17 @@
+# .bashrc
+
+# User specific aliases and functions
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+export LC_ALL='en_US.utf8'
+export PATH=$HOME/usr/bin:$HOME/bin:$HOME/lib:$HOME/lib64:$HOME/usr/local/bin:$PATH
+#export PATH=$PATH:~/bin:~/lib:~/lib64:~/usr/local/bin:~/usr/bin
+export MANPATH=$MANPATH:~/share/man
+
+#########add by ranbo
 # To the extent possible under law, the author(s) have dedicated all
 # copyright and related and neighboring rights to this software to the
 # public domain worldwide. This software is distributed without any warranty.
@@ -196,6 +210,5 @@ cd_func ()
 }
 
 alias cd=cd_func
-
 #add by wuranbo
-export LC_ALL='en_US.utf8'
+alias astyle-bd='astyle --style=linux -C -S -N -L -t --suffix=none'

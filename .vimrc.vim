@@ -654,7 +654,7 @@ let Grep_Skip_Files='*.bak *~ *.mk .*.swp *.o tags'
 "skipdir
 let Grep_Skip_Dirs='.svn RCS CVS SCCS .git'
 "default files
-let Grep_Default_Filelist='*.cpp *.cc *.c *.proto *.h *.py *.html *.js *.java *.sh *.asm'
+let Grep_Default_Filelist='*.cpp *.cc *.c *.proto *.h *.py *.html *.js *.java *.sh *.asm *.hpp *.d'
 "=========================pyflakes-vim================
 "Make sure your .vimrc has:
 "
